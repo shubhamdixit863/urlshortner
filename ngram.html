@@ -10,7 +10,21 @@
           <script>
 
           //console.log(nGram(3)("I rlealy like python, it's pretty awesome."));
-          console.log(simplengram(3,"abcdeabcde"))
+          console.log(simplengram(3,"abcdeabcde"));
+
+
+          const arr1=[1,2,79,98,34];
+          const arr2=[2,8,99,1,5,33];
+          //const arr3=arr1.concat(arr2); // "syr"+str
+          const arr4=[arr1,arr2];
+          const arr3=[...arr1,...arr2];
+          console.log(arr4);
+
+          arr3.sort((a,b)=>{
+            return a-b;
+
+          });
+          console.log(arr3);
           
           </script>
     </body>
