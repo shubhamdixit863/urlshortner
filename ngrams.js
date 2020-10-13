@@ -1,4 +1,21 @@
 // Factory returning a function that converts a value string to n-grams.
+
+
+
+// function that checks the array for repeated values and their number
+
+function frequentngram(ngram)
+{
+  
+  
+  
+
+}
+
+
+
+
+
 function nGram(n) {
     if (typeof n !== 'number' || isNaN(n) || n < 1 || n === Infinity) {
       throw new Error('`' + n + '` is not a valid argument for n-gram')

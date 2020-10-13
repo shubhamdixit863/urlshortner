@@ -44,6 +44,8 @@ function send_request(url) {
              console.log(data)
          },
 })
+
+
 }
 
 function shorturl(){
@@ -58,6 +60,8 @@ if (window.location.hash != "") {
     console.log(endpoint + "/" + hashh);
     $.getJSON(endpoint, function (data) {
         console.log(data);
+
+       
 
       const _d= data.find(ele=>ele.hash==hashh)
       
