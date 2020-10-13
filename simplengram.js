@@ -1,3 +1,30 @@
+function frequent(ngrams)
+{
+    const obj={} // it will contain the key(ngram) value will be its frequency
+
+
+    ngrams.forEach(element => {
+
+        if(obj[element])
+        {
+            obj[element]++
+        }
+        else{
+            obj[element]=1;
+        }
+        
+    });
+
+    var max = 0;
+
+
+
+return max;
+   
+    
+
+}
+
 function simplengram(n ,stringvalue)
 {
   const nGrams=[];
@@ -5,16 +32,16 @@ function simplengram(n ,stringvalue)
 
     index = stringvalue.length - n + 1 // formula
     //
-    console.log(stringvalue.length);
-    console.log(index);
-  
+   
   
   
    
     while (index--) {
-      nGrams[index] = stringvalue.slice(index, index + n)
+      nGrams.push( stringvalue.slice(index, index + n))
     }
 
-    return nGrams
+    console.log(nGrams);
+
+    return frequent(nGrams)
 
 }
